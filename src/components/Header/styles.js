@@ -17,6 +17,15 @@ export const ContainerHeader = styled.header`
 
   margin-left: 3.12rem;
 
+  div {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 11px;
+    }
+  }
+
   p {
     margin: 0;
     font-family: "Roboto Slab", serif;

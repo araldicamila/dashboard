@@ -38,7 +38,7 @@ export const RoutesComponent = () => {
             element={item.component}
             exact
             key={item.path}
-            location={{ state: { name: item.name } }}
+            location={{ state: { name: item.name, icon: item.icon } }}
           />
         ))}
     </Switch>
