@@ -35,7 +35,7 @@ export const RoutesComponent = () => {
         routes.map((item) => (
           <Route
             path={item.path}
-            element={item.component}
+            render={() => item.component}
             exact
             key={item.path}
             location={{ state: { name: item.name, icon: item.icon } }}

@@ -10,6 +10,10 @@ export const ContainerMenu = styled.div`
   flex-direction: column;
   align-items: center;
 
+  position: absolute;
+  left: 0;
+  top: 0;
+
   padding: 5rem 0;
 
   a {

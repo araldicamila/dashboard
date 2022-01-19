@@ -8,8 +8,9 @@ function App() {
     <>
       <Menu />
       <Header />
-
-      <RoutesComponent />
+      <main>
+        <RoutesComponent />
+      </main>
     </>
   );
 }
