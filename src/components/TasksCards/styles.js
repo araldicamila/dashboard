@@ -36,6 +36,10 @@ export const ContainerAvatar = styled.div`
   border-radius: 50px;
 
   margin-right: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FooterCards = styled.div`
@@ -47,5 +51,17 @@ export const FooterCards = styled.div`
   div {
     display: flex;
     align-items: center;
+
+    button {
+      margin: 0;
+      background-color: transparent;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
   }
+`;
+
+export const OptionsCards = styled.div`
+  position: relative;
 `;

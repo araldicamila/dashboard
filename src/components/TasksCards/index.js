@@ -1,8 +1,17 @@
-import { ContainerAvatar, ContainerTasksCards, FooterCards } from "./styles";
+import {
+  ContainerAvatar,
+  ContainerTasksCards,
+  FooterCards,
+  OptionsCards,
+} from "./styles";
 
 import IconEdit from "../../assets/icons/icon-update.png";
+import { Tooltip } from "../Tooltip";
+import { useState } from "react";
 
 export const TasksCards = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <ContainerTasksCards>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
@@ -15,9 +24,19 @@ export const TasksCards = () => {
         <time>19/01/2022</time>
 
         <div>
-          <ContainerAvatar />
+          <ContainerAvatar>CA</ContainerAvatar>
 
-          <img src={IconEdit} alt="Edição" />
+          <OptionsCards>
+            <button onClick={() => setOpen(!open)}>
+              <img src={IconEdit} alt="Edição" />
+            </button>
+            {open ? (
+              <Tooltip>
+                <button>Edit</button>
+                <button>Delete</button>
+              </Tooltip>
+            ) : null}
+          </OptionsCards>
         </div>
       </FooterCards>
     </ContainerTasksCards>

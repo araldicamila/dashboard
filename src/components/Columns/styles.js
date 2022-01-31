@@ -26,6 +26,8 @@ export const ContainerColumns = styled.div`
   height: 100%;
   max-width: 24rem;
 
+  min-height: calc(100vh - 6rem);
+
   .header-columns {
     display: flex;
     justify-content: center;
@@ -58,6 +60,9 @@ export const ContainerColumns = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    cursor: pointer;
+    position: relative;
   }
 `;
 
